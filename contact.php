@@ -17,7 +17,7 @@
         <p>Drop us a mail. We'd like to hear from you</p>
         <br/>
         <p>
-            <img src='../images/mail.gif' width='260' height='160' />
+            <img src='images/mail.gif' width='260' height='160' />
         </p>
         <br/>
         <p>
