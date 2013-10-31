@@ -29,6 +29,15 @@
     <!-- JQuery 2.0.3-->
     <script type='text/javascript' src='js/jquery-2.0.3.min.js'></script>
 
+    <!-- Flexslider settings-->
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideToggle("slow");
+            });
+        });
+    </script>
+
 </head>
 
 <body oncontextmenu="return false">
