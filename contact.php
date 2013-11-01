@@ -1,56 +1,45 @@
-<html lang="en">
-<head>
+<?php $page_name = 'Solutions'; ?>
+<?php require_once('includes/header.php') ?>
 
-    <title>Contact Us</title>
-    <?php require_once('include_scripts/uniform.php'); $contact_active_page = 'active_page'; ?>
+<div id='content' class='grid_5'>
+    <h2>Contact Us</h2>
+    <p>Drop us a mail. We'd like to hear from you</p>
+    <br/>
+    <p>
+        <img src='images/mail.gif' width='260' height='160' />
+    </p>
+    <br/>
+    <p>
+        Nulla elementum dui ut augue. Aliquam vehicula mi at mauris. Maecenas
+        placerat, nisl at consequat rhoncus, sem nunc gravida justo, quis eleifend
+        arcu velit quis lacus.
+    </p>
+</div>
 
-</head>
-<?php require_once('include_scripts/topper.php'); ?>
-<body oncontextmenu="return false">
-
-<div class='container clearfix'>
-
-    <?php require_once('include_scripts/header.php'); ?>
-
-    <div id='content' class='grid_5'>
-        <h2>Contact Us</h2>
-        <p>Drop us a mail. We'd like to hear from you</p>
-        <br/>
-        <p>
-            <img src='images/mail.gif' width='260' height='160' />
-        </p>
-        <br/>
-        <p>
-            Nulla elementum dui ut augue. Aliquam vehicula mi at mauris. Maecenas
-            placerat, nisl at consequat rhoncus, sem nunc gravida justo, quis eleifend
-            arcu velit quis lacus.
-        </p>
-    </div>
-
-    <div id='form' class='grid_7 omega'>
-        <form action='contact_validation.php' method='post'>
-            <dl>
-                <dt>
+<div id='form' class='grid_7 omega'>
+    <form action='contact_validation.php' method='post'>
+         <dl>
+            <dt>
                 <dd><label for='name'>Name:</label></dd>
                 <dd>
                     <input name='name' id='name' type='text'>
                     <span>Please enter your name</span>
                 </dd>
-                </dt>
-                <dt>
+            </dt>
+            <dt>
                 <dd><label for='email'>Email:</label></dd>
                 <dd>
                     <input name='email' id='email' type='text' class='required'>
                     <span>Enter a valid email address</span>
                 </dd>
-                </dt>
+            </dt>
                 <dt>
                 <dd><label for='subject'>Subject:</label></dd>
                 <dd><input name='subject' id='subject' type='text'>
                     <span>Please enter your subject</span>
                 </dd>
-                </dt>
-                <dt>
+            </dt>
+            <dt>
                 <dd><label for='message'>Message:</label></dd>
                 <dd>
                     <textarea rows='8' name='message' id='message' class='required'></textarea>
@@ -61,8 +50,9 @@
                 <dd class='submit'>
                     <input type='submit' value='Submit' class='btn-submit'>
                 </dd>
-                </dt>
-            </dl>
+            </dt>
+         </dl>
+
             <?php
             if(isset($_GET['feedback']))	{
                 $feedback = $_GET['feedback'];
@@ -71,46 +61,46 @@
                 $feedback = "";
             }
             ?>
-            <p class='feedback'><?php echo $feedback; ?></p>
-        </form>
-    </div>
-
-    <?php require_once('include_scripts/footer.php') ?>
+         <p class='feedback'><?php echo $feedback; ?></p>
+    </form>
 </div>
-<script type='text/javascript' src='js/validEmail.js'></script>
-<script type='text/javascript'>
 
-    var $submit = $(".submit input");
-    var $required = $(".required");
-    function containsBlanks() {
-        var blanks = $required.map(function(){ return $(this).val() == "";});
-        return $.inArray(true, blanks) != -1;
-    }
 
-    function requiredFilledIn() {
-        if(containsBlanks() || !$("#email").validEmail())
-            $submit.attr("disabled","disabled");
-        else
-            $submit.removeAttr("disabled");
-    }
+    <script type='text/javascript' src='js/validEmail.js'></script>
+    <script type='text/javascript'>
 
-    $("#form span").hide();
-    $("input,textarea").focus(function(){
-        $(this).next().fadeIn("slow");
-    }).blur(function(){
-            $(this).next().fadeOut("slow");
-        }).keyup(function(){
-            //Check all required fields.
-            requiredFilledIn();
-        });
+        var $submit = $(".submit input");
+        var $required = $(".required");
+        function containsBlanks() {
+            var blanks = $required.map(function(){ return $(this).val() == "";});
+            return $.inArray(true, blanks) != -1;
+        }
 
-    $("#email").validEmail({on:"keyup", success:function(){
-        $(this).next().removeClass("error").addClass("valid");
-    }, failure:function(){
-        $(this).next().removeClass("valid").addClass("error");
-    }});
+        function requiredFilledIn() {
+            if(containsBlanks() || !$("#email").validEmail())
+                $submit.attr("disabled","disabled");
+            else
+                $submit.removeAttr("disabled");
+        }
 
-    requiredFilledIn();
-</script>
-</body>
-</html>
+        $("#form span").hide();
+        $("input,textarea").focus(function(){
+            $(this).next().fadeIn("slow");
+        }).blur(function(){
+                $(this).next().fadeOut("slow");
+            }).keyup(function(){
+                //Check all required fields.
+                requiredFilledIn();
+            });
+
+        $("#email").validEmail({on:"keyup", success:function(){
+            $(this).next().removeClass("error").addClass("valid");
+        }, failure:function(){
+            $(this).next().removeClass("valid").addClass("error");
+        }});
+
+        requiredFilledIn();
+    </script>
+
+
+<?php require_once('includes/footer.php') ?>
