@@ -1,5 +1,7 @@
-<?php $page_name = 'Solutions'; ?>
-<?php require_once('includes/header.php') ?>
+<?php
+    $page_name = 'Contact Us';
+    require_once('includes/header.php');
+?>
 
 <div id='content' class='grid_5'>
     <h2>Contact Us</h2>
@@ -45,22 +47,22 @@
                     <textarea rows='8' name='message' id='message' class='required'></textarea>
                     <span>Please enter your message</span>
                 </dd>
-                </dt>
-                <dt>
+            </dt>
+            <dt>
                 <dd class='submit'>
                     <input type='submit' value='Submit' class='btn-submit'>
                 </dd>
             </dt>
          </dl>
 
-            <?php
+         <?php
             if(isset($_GET['feedback']))	{
                 $feedback = $_GET['feedback'];
             }
             else	{
                 $feedback = "";
             }
-            ?>
+         ?>
          <p class='feedback'><?php echo $feedback; ?></p>
     </form>
 </div>
