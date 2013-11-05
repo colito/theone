@@ -22,8 +22,8 @@ function isValidEmail($email) {
 if($email != "" && $message != "" && isValidEmail($email)) {
 
 	$full_message = "Name : \t\t". $name . "\n";
-	$full_message .= "Email : \t\t". $email . "\n";
-	$full_message .= "Message :\n\n". $message . "\n";
+	$full_message .= "Email : \t\t". $email . "\n\n";
+	$full_message .= $message . "\n";
 
 	mail($to_email, $subject, $full_message);
 	
