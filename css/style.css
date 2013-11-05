@@ -2,7 +2,7 @@
 -----------------------------------------------*/
 body
 {
-	background: #ffffff; /*#edece3*/ /*url("images/leela_bg.jpg")*/
+	background: url("images/leela_bg.jpg"); /*#edece3*/ /*url("images/leela_bg.jpg")*/
 	font-family: 'Armata', sans-serif;
 }
 
@@ -11,10 +11,10 @@ body
 .container_12
 {
     margin-top: 5.5%;
-    /*background: #ffffff;*/
+    /*background: #ffffff;
     border: solid thin pink;
     background: #000000 url('images/awesome-graffiti-art.jpg');
-    box-shadow:2px 2px 2px 2px grey;
+    box-shadow:2px 2px 2px 2px grey;*/
 }
 
 /*typography
