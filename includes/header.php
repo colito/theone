@@ -30,7 +30,7 @@
     <!-- JQuery 2.0.3-->
     <script type='text/javascript' src='js/jquery-2.0.3.min.js'></script>
 
-    <!-- Flexslider settings-->
+    <!-- Menu toggle for smart phones -->
     <script type="text/javascript" charset="utf-8">
         $(document).ready(function(){
             $("#flip").click(function(){
