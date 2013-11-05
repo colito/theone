@@ -2,8 +2,19 @@
 -----------------------------------------------*/
 body
 {
-	background: #edece3; /*#edece3*/
+	background: #ffffff; /*#edece3*/ /*url("images/leela_bg.jpg")*/
 	font-family: 'Armata', sans-serif;
+}
+
+/*main container
+-----------------------------------------------*/
+.container_12
+{
+    margin-top: 5.5%;
+    /*background: #ffffff;*/
+    border: solid thin pink;
+    background: #000000 url('images/awesome-graffiti-art.jpg');
+    box-shadow:2px 2px 2px 2px grey;
 }
 
 /*typography
@@ -62,7 +73,7 @@ p
     width: 100%;
     top: 0px;
     height: 47px;
-    background-color: lightslategray;
+    background-color: steelblue;
     z-index: 100;
     /*border-bottom: solid 12px lightsteelblue;*/
 }
@@ -154,13 +165,6 @@ p
 	nav-index: 3;
 }
 
-/*main container
------------------------------------------------*/
-.container_12
-{
-    margin-top: 5.5%;
-}
-
  /*search
  ---------------------------------------------*/
  #navigation ul #searchbar
@@ -185,7 +189,8 @@ p
 
 /*content
 ----------------------------------------------*/
-/*.container{
+/*.container_12
+{
 	background: #FFFFFF url('images/awesome-graffiti-art.jpg');
 	box-shadow:2px 2px 2px 2px grey;
 }*/
