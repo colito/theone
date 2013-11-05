@@ -1,6 +1,7 @@
 <?php
-$page_name = 'Home';
-require_once('includes/header.php');
+    $page_name = 'Home';
+    $home_active_page = 'active_page';
+    require_once('includes/header.php');
 ?>
 
 

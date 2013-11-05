@@ -1,5 +1,6 @@
 <?php
     $page_name = 'Contact Us';
+    $contact_active_page = 'active_page';
     require_once('includes/header.php');
 ?>
 

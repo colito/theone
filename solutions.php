@@ -1,6 +1,8 @@
-<?php $page_name = 'Solutions'; ?>
-
-<?php require_once('includes/header.php'); ?>
+<?php
+    $page_name = 'Solutions';
+    $solutions_active_page = 'active_page';
+    require_once('includes/header.php');
+?>
 
 
 <div id='content-card' class='grid_5'>
