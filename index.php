@@ -1,6 +1,7 @@
-<?php $page_name = 'Solutions'; ?>
-
-<?php require_once('includes/header.php'); ?>
+<?php
+$page_name = 'Home';
+require_once('includes/header.php');
+?>
 
 
 <div id='content' class='grid_12'>
