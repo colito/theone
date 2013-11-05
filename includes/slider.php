@@ -1,7 +1,7 @@
 <?php
 
     $width = '';
-    $height = '50';
+    $height = '';
 ?>
 
 <div id='picshow' class='grid_12 flexslider omega'>
