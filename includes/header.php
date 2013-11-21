@@ -1,18 +1,23 @@
-<?php ob_start();?>
+<?php
+ob_start();
+require_once('config.php');
+$config = new Config();
+?>
+
 <!DOCTYPE HTML>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
 
     <title><?php echo $page_name ?></title>
 
-    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
-    <meta name='viewport' content='width=device-width, initial-scale = 1.0, user-scalable = no'>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
 
-    <link rel='stylesheet' href='css/normalize.css' type='text/css' media='screen' />
-    <link rel='stylesheet' href='css/grid.css' type='text/css' media='screen' />
-    <link href='http://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-    <link rel='stylesheet' href='css/style.css' type='text/css' media='screen' />
+    <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
+    <link href="http://fonts.googleapis.com/css?family=Armata" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/style.css" type='text/css' media="screen">
 
     <!-- GA -->
     <script type='text/javascript'>
@@ -30,22 +35,13 @@
     <!-- JQuery 2.0.3-->
     <script type='text/javascript' src='js/jquery-2.0.3.min.js'></script>
 
-    <!-- Menu toggle for smart phones -->
-    <script type="text/javascript" charset="utf-8">
-        $(document).ready(function(){
-            $("#switch").click(function(){
-                $("#panel").slideToggle("slow");
-            });
-        });
-    </script>
-
 </head>
 
 <body oncontextmenu="return false">
 
     <div id='topper'>
         <div id='title'>
-            <h1><a href='index.php'>Success Motivation</a></h1>
+            <h1><a href='index.php'><?php echo $config->site_name; ?></a></h1>
         </div>
 
         <div id='navigation'>
