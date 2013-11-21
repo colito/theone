@@ -5,7 +5,7 @@
 ?>
 
 
-<div id='content-card' class='grid_5'>
+<div id='content' class='grid_5'>
     <p>
         1 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi.
         Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.
@@ -19,7 +19,7 @@
 
 </div>
 
-<div id='content-card1' class='grid_5'>
+<div id='content' class='grid_5'>
 
     <p>
         2.1 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi.
@@ -45,7 +45,7 @@
 
 </div>
 
-<div id='content-card' class='grid_5'>
+<div id='content' class='grid_5'>
 
     <p>
         3. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi.
