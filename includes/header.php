@@ -40,9 +40,12 @@ $config = new Config();
 <body oncontextmenu="return false">
 
     <div id='topper'>
+
         <div id='title'>
             <h1><a href='index.php'><?php echo $config->site_name; ?></a></h1>
         </div>
+
+        <div id='switch'></div>
 
         <div id='navigation'>
             <ul>
@@ -51,10 +54,10 @@ $config = new Config();
                 <li id="<?php echo $contact_active_page ?>" class='contact'><a href='contact.php'>Contact Us</a></li>
             </ul>
         </div>
+
     </div>
 
-    <div id='switch'>menu</div>
-        <div id='panel'>
+    <div id='panel'>
         <ul>
             <li class='home'><a href='index.php'>Home</a></li>
             <li class='solutions'><a href='solutions.php'>Solutions</a></li>

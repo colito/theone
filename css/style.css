@@ -11,8 +11,8 @@ body
 .container_12
 {
     margin-top: 5.5%;
-    /*background: #ffffff;
-    border: solid thin pink;
+    background: #ffffff;
+    /*border: solid thin pink;
     background: #000000 url('images/awesome-graffiti-art.jpg');
     box-shadow:2px 2px 2px 2px grey;*/
 }
@@ -382,14 +382,14 @@ p
 	width:100%;
 }
 
-.container
+.container_12
 {
-    margin-top: 18%;
+    margin-top: 10%;
 }
 
 #topper
 {
-    height: 50px;
+    height: 40px;
 }
 #topper #title h1
 {
@@ -402,25 +402,31 @@ p
     display: block;
     position: fixed;
     width: 100%;
-    background-color:#e5eecc;
-    border:solid 1px #c3c3c3;
     font-size: 0.750em;
     z-index: 101;
 }
 
 #switch
 {
-    top: 48.3px;
-    height: 23px;
+    top: 0px;
+    height: 40px;
+    opacity: 0.9;
     text-align:center;
     background-color: skyblue;
     cursor: pointer;
+    width: 18px;
+    float: right;
 }
 
 #panel
 {
-    top: 73px;
+    top: 40px;
+    /*height: 30%;*/
     display:none;
+    opacity: 0.9;
+    background-color:skyblue;
+    border:solid 1px #c3c3c3;
+    border-top: none;
 }
 
 #panel ul
