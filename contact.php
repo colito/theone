@@ -4,7 +4,7 @@
     require_once('includes/header.php');
 ?>
 
-<div id='content' class='grid_5'>
+<div id='content' class='grid_5 omega'>
     <h2>Contact Us</h2>
     <p>Drop us a mail. We'd like to hear from you</p>
     <br/>
