@@ -413,12 +413,12 @@ p
 {
     top: 0px;
     height: 40px;
+    right: 0px;
     opacity: 0.9;
     text-align:center;
     background-color: skyblue;
     cursor: pointer;
-    width: 18px;
-    float: right;
+    width: 22px;
 }
 
 #panel
