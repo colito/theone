@@ -8,7 +8,7 @@
             <?php
                 if($page_name == 'Home')
                 {
-                    require_once('../includes/slider_setting.php');
+                    require_once(main_include.'slider_setting.php');
                 }
             ?>
 

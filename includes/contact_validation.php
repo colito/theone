@@ -33,7 +33,7 @@ if($email != "" && $message != "" && isValidEmail($email)) {
 	
 	$feedback = urlencode($feedback);
 	
-	header("location: ../contact.php?feedback=" . $feedback);
+	header("location: ".navi_contact."?feedback=" . $feedback);
     
 	exit();
 }

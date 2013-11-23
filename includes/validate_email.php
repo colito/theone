@@ -1,5 +1,5 @@
-<script type='text/javascript' src='../js/validEmail.js'></script>
-<script type='text/javascript'>
+<script type='text/javascript' src="<?php echo main_js?>validEmail.js"></script>
+<script type="text/javascript">
 
     var $submit = $(".submit input");
     var $required = $(".required");
