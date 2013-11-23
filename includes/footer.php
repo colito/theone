@@ -17,7 +17,7 @@
     <script type="text/javascript" charset="utf-8">
         $(document).ready(function(){
             $("#switch").click(function(){
-                $("#panel").slideToggle("slow");
+                $("#panel").slideToggle(250);
                 });
             });
     </script>
