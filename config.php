@@ -24,5 +24,6 @@ define('main_topper', '../includes/topper.php');
 define('main_images', '../images');
 define('main_css', '../css/');
 define('main_js', '../js/');
+define('main_jquery', '../js/jquery-2.0.3.min.js');
 
 ?>
