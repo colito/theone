@@ -59,9 +59,9 @@ $config = new Config();
 
     <div id='panel'>
         <ul>
-            <li class='home'><a href='index.php'>Home</a></li>
-            <li class='solutions'><a href='solutions.php'>Solutions</a></li>
-            <li class='contact'><a href='contact.php'>Contact Us</a></li>
+            <li id="<?php echo $home_active_page ?>" class='home'><a href='index.php'>Home</a></li>
+            <li id="<?php echo $solutions_active_page ?>" class='solutions'><a href='solutions.php'>Solutions</a></li>
+            <li id="<?php echo $contact_active_page ?>" class='contact'><a href='contact.php'>Contact Us</a></li>
         </ul>
     </div>
 
