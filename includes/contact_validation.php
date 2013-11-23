@@ -1,5 +1,6 @@
 <?php
 ob_start();
+require_once('../config.php');
 echo "Please wiat...";
 
 $to_email = "support@ssmotivation.co.za";
