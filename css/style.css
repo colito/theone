@@ -2,19 +2,21 @@
 -----------------------------------------------*/
 body
 {
-	background: url("images/leela_bg.jpg"); /*#edece3*/ /*url("images/leela_bg.jpg")*/
+	background: #f8f9fa;/*url("images/leela_bg.jpg")*/ /*#edece3*/ /*#f8f9fa*/
 	font-family: 'Armata', sans-serif;
+    font-weight: 400;
+    color: #4E5860;
 }
 
 /*main container
 -----------------------------------------------*/
 .container_12
 {
-    margin-top: 5.5%;
+    margin-top: 3.6%;
     background: #ffffff;
-    /*border: solid thin pink;
-    background: #000000 url('images/awesome-graffiti-art.jpg');
-    box-shadow:2px 2px 2px 2px grey;*/
+    border: solid thin #ECEFF0;
+    /*background: #000000 url('images/awesome-graffiti-art.jpg');*/
+    /*box-shadow:2px 2px 2px 2px grey;*/
 }
 
 /*typography
@@ -49,7 +51,7 @@ a
 p
 {
 	font-size: 0.9em;
-	color: #696969;
+	color: #4E5860/*#696969*/;
 	letter-spacing: 0.02em;
 	word-spacing: 3px;
 }
@@ -102,7 +104,7 @@ p
 	border-right: 40px solid green;
 	
 	transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);/home/pride/Development/yonder_mediashop_aspen/branches/development
 	-moz-transform: rotate(45deg);
 }
 
@@ -181,24 +183,25 @@ p
 	margin-left: 1%;
 	box-shadow:2px 2px 2px 2px lightslategrey;*/
 
-	margin-top: 1%;
+	/*margin-top: 1%;*/
 	background: url('images/gridme.png');
-	z-index: -1;
+	/*z-index: -1;*/
 }
 
 
 /*content
 ----------------------------------------------*/
-/*.container_12
-{
-	background: #FFFFFF url('images/awesome-graffiti-art.jpg');
-	box-shadow:2px 2px 2px 2px grey;
-}*/
 #content
 {
-	margin-top: 1%;
+	margin-top: 5%;
+    margin-left: 0.3%;
     marigin-right: 0;
 	/*border: solid thin red;*/
+}
+
+.center
+{
+    text-align: center;
 }
 
 #content-card
