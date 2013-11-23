@@ -1,6 +1,6 @@
 <?php
 ob_start();
-require_once('config.php');
+require_once('../config.php');
 $config = new Config();
 ?>
 
@@ -13,11 +13,11 @@ $config = new Config();
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
 
-    <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="../css/normalize.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="../css/grid.css" type="text/css" media="screen">
     <link href="http://fonts.googleapis.com/css?family=Armata" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="css/style.css" type='text/css' media="screen">
+    <link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="../css/style.css" type='text/css' media="screen">
 
     <!-- GA -->
     <script type='text/javascript'>
@@ -33,7 +33,7 @@ $config = new Config();
     </script>
 
     <!-- JQuery 2.0.3-->
-    <script type='text/javascript' src='js/jquery-2.0.3.min.js'></script>
+    <script type='text/javascript' src='../js/jquery-2.0.3.min.js'></script>
 
 </head>
 
@@ -42,16 +42,16 @@ $config = new Config();
     <div id='topper'>
 
         <div id='title'>
-            <h1><a href='index.php'><?php echo $config->site_name; ?></a></h1>
+            <h1><a href='../home'><?php echo $config->site_name; ?></a></h1>
         </div>
 
         <div id='switch'></div>
 
         <div id='navigation'>
             <ul>
-                <li id="<?php echo $home_active_page ?>" class='home'><a href='index.php'>Home</a></li>
-                <li id="<?php echo $solutions_active_page ?>" class='solutions'><a href='solutions.php'>Solutions</a></li>
-                <li id="<?php echo $contact_active_page ?>" class='contact'><a href='contact.php'>Contact Us</a></li>
+                <li id="<?php echo $home_active_page ?>" class='home'><a href='../home'>Home</a></li>
+                <li id="<?php echo $solutions_active_page ?>" class='solutions'><a href='../solutions'>Solutions</a></li>
+                <li id="<?php echo $contact_active_page ?>" class='contact'><a href='../contact'>Contact Us</a></li>
             </ul>
         </div>
 
@@ -59,9 +59,9 @@ $config = new Config();
 
     <div id='panel'>
         <ul>
-            <li id="<?php echo $home_active_page ?>" class='home'><a href='index.php'>Home</a></li>
-            <li id="<?php echo $solutions_active_page ?>" class='solutions'><a href='solutions.php'>Solutions</a></li>
-            <li id="<?php echo $contact_active_page ?>" class='contact'><a href='contact.php'>Contact Us</a></li>
+            <li id="<?php echo $home_active_page ?>" class='home'><a href='../home'>Home</a></li>
+            <li id="<?php echo $solutions_active_page ?>" class='solutions'><a href='../solutions'>Solutions</a></li>
+            <li id="<?php echo $contact_active_page ?>" class='contact'><a href='../contact'>Contact Us</a></li>
         </ul>
     </div>
 
