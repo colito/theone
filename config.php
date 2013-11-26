@@ -19,7 +19,6 @@ define('navi_contact', '../contact/');
 define('main_include', '../includes/');
 define('main_header', '../includes/header.php');
 define('main_footer', '../includes/footer.php');
-define('main_topper', '../includes/topper.php');
 
 define('main_images', '../images/');
 define('main_css', '../css/');
