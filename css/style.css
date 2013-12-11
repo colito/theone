@@ -12,7 +12,7 @@ body
 -----------------------------------------------*/
 .container_12
 {
-    margin-top: 3.6%;
+    margin-top: 4.6%;
     background: #ffffff;
     border: solid thin #ECEFF0;
     /*background: #000000 url('images/awesome-graffiti-art.jpg');*/
@@ -195,7 +195,7 @@ p
 {
 	margin-top: 5%;
     -webkit-margin-top: 5%;
-    margin-left: 0.5%;
+    margin-left: 0.667%;
     marigin-right: 0;
 	/*border: solid thin red;*/
 }
@@ -388,7 +388,7 @@ p
 
 .container_12
 {
-    margin-top: 10%;
+    margin-top: 11.6%;
 }
 
 #topper
