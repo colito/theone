@@ -2,7 +2,7 @@
 -----------------------------------------------*/
 body
 {
-	background: #f8f9fa;/*url("images/leela_bg.jpg")*/ /*#edece3*/ /*#f8f9fa*/
+	background: #f0f0f0;/*url("images/leela_bg.jpg")*/ /*#edece3*/ /*#f8f9fa*/
 	font-family: 'Armata', sans-serif;
     font-weight: 400;
     color: #4E5860;
@@ -194,6 +194,7 @@ p
 #content
 {
 	margin-top: 5%;
+    -webkit-margin-top: 5%;
     margin-left: 0.5%;
     marigin-right: 0;
 	/*border: solid thin red;*/
@@ -492,7 +493,9 @@ p
 }
 #content
 {
+    width: 98%;
 	margin-top: 5%;
+    padding-left: 1%;
 }
 dt	{
 	padding: 0px;
